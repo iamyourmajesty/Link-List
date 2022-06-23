@@ -1,35 +1,4 @@
-#include<bits/stdc++.h>
-using namespace std;
-class Node
-{
-    public:
-    int data;
-    Node *next;
-    
-    Node(int data)
-    {
-        this->data=data;
-        this->next=NULL;
-    }
-};
-void insertAtTail(Node * &tail,int data)
-{
-    Node *temp=new Node(data);
-    
-    tail->next=temp;
-    
-    tail=temp;
-}
-void print(Node * &head)
-{
-    Node *lol=head;
-    while(lol!=NULL)
-    {
-        cout<<lol->data<<" ";
-        lol=lol->next;
-    }
-    cout<<endl;
-}
+#include "Insertion_traversal_and_deletation.cpp"
 Node* reverse(Node * &head)
 {
     
@@ -65,3 +34,5 @@ int main()
     
     return 0;
 }
+//Reverse a linked list
+//https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1/
